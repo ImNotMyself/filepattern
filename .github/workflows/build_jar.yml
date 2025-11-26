@@ -21,7 +21,8 @@ jobs:
         java-version: 11
         distribution: 'temurin'
         architecture: x64
-
+    - use: ilammy/msvc-dev-cmd@v1
+    
     - name: Build and test project with Maven
       run: mvn -B package --file pom.xml
     
